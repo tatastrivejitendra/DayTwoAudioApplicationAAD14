@@ -28,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onPause() {
+
+
+        super.onPause();
+    }
+
     public void  play_btn(View view) {
         final Button sound = (Button) view;
 
@@ -44,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 sound.setTextColor(Color.WHITE);
             }
         });
+
+
 
     }
 }
